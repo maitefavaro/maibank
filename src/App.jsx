@@ -1,14 +1,19 @@
+import  React, {useState}  from 'react';
+import MaskedInput from './MaskedInput';
+
+
 export const App = () => {
+  const [cpf, setCpf] = useState('');
   return (
     <>
         <div className="w-full bg-cinzaa flex h-screen">
-          <div className="bg-white w-[50rem] px-4 py-3 my-40 ml-40 rounded h-80 flex flex-col gap-2 justify-center">
-            <h1 className="text-2xl font-bold">Peça sua conta e cartão do MaiBank</h1>
-            <input type="text" placeholder="Digite seu CPF" />
-            <button className="w-32 ml-auto mt-44 border-transparent rounded-lg text-white bg-verdeagua hover:bg-teal-300" >Continuar</button>
+          <div className="bg-white w-[50rem] h-fit px-16 py-16 my-40 ml-40 rounded-xl flex flex-col gap-2">
+            <h1 className="text-4xl font-bold ">Peça sua conta e cartão do MaiBank</h1>
+            <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="  border-b-2 rounded w-96 mt-16 py-3 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "  type="text" placeholder="CPF:" />
+            <button className="w-32 p-2 mt-16 ml-auto border-transparent rounded-lg text-white bg-verdeagua hover:bg-teal-300" >Continuar</button>
           </div>
           <div className="rounded-xl w-full">
-            <img className="h-full" src="img/sem_fundo.png" alt="Erro" />
+            <img className="h-full" src="" alt="" />
           </div>
         </div>
 

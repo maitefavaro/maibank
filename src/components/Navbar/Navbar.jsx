@@ -1,7 +1,7 @@
 export const Navbar = () => {
     return (
         <>
-            <div className="md:flex items-center justify-between px-6 py-3">
+            <div className="md:flex items-center justify-between px-6 py-3 ">
                 <img className="h-14 rounded-full my-4 ml-4" src="img/branco.png" alt="Erro" />
 
                 <a href="https://api.whatsapp.com/send?phone=5519989558913&text=Ol%C3%A1!">
