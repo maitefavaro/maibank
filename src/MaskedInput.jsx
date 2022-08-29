@@ -1,19 +1,21 @@
 import React from "react";
 import InputMask from "react-input-mask";
 
-const MaskedInput = ({ value, onChange}) => {
+const MaskedInput = ({ value, onChange }) => {
 
-    function handleChange(event){
-    onChange({
-        ...event,
-    })
-}
+    function handleChange(event) {
+        onChange({
+            ...event,
+        })
+    }
 
     return (
-        <InputMask 
-        mask = "999.999.999-99" 
-        value={value} 
-        onChange={onChange}
+        <InputMask
+            className="outline-none"
+            mask="999.999.999-99"
+            placeholder="CPF:"
+            value={value}
+            onChange={onChange}
         />
     )
 };

@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         bonitinho: "blue",
         verdeagua: "#04D6C8",
-        cinzaa: "#F5F5F5"
+        cinzaa: "#F5F5F5",
+        verdeagua_escuro: "#2FB2A9"
       },
 
     },

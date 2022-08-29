@@ -9,8 +9,9 @@ export const App = () => {
         <div className="w-full bg-cinzaa flex h-screen">
           <div className="bg-white w-[50rem] h-fit px-16 py-16 my-40 ml-40 rounded-xl flex flex-col gap-2">
             <h1 className="text-4xl font-bold ">Peça sua conta e cartão do MaiBank</h1>
-            <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="  border-b-2 rounded w-96 mt-16 py-3 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "  type="text" placeholder="CPF:" />
-            <button className="w-32 p-2 mt-16 ml-auto border-transparent rounded-lg text-white bg-verdeagua hover:bg-teal-300" >Continuar</button>
+            <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="" type="text" />
+
+            <button className="w-32 p-2 mt-16 ml-auto border-transparent rounded-lg text-white bg-verdeagua hover:bg-verdeagua_escuro">Continuar</button>
           </div>
           <div className="rounded-xl w-full">
             <img className="h-full" src="" alt="" />
@@ -27,7 +28,6 @@ export const App = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full bg-cinzaa flex h-screen justify-items-center">
         <div className="rounded-xl w-96 h-80 ml-40 justify-center">
             <img className="h-full" src="img/cartoes.png" alt="Erro" />
