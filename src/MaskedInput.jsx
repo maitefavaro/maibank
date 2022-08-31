@@ -13,7 +13,7 @@ const MaskedInput = ({ value, onChange }) => {
         <InputMask
             className="outline-none"
             mask="999.999.999-99"
-            placeholder="CPF:"
+            placeholder="Digite seu CPF"
             value={value}
             onChange={onChange}
         />
