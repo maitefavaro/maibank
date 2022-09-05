@@ -33,9 +33,34 @@ export const App = () => {
       </div>
 
 
+      {/* <div className="w-full bg-cinzaa flex h-screen justify-around items-center">
+            <img className="w-[35rem]" src="img/teste.png" alt="" />
+            <img className="w-[40rem]" src="img/celularr.png" alt="" />
+      </div> */}
+
+
       <div className="w-full bg-cinzaa flex h-screen justify-around items-center">
-            <img className="max-w-xl" src="" alt="" />
-            <img className="max-w-xl" src="" alt="" />
+        <div>
+          <div className='text-4xl font-bold p-2 mt-10 mx-auto border-transparent rounded-full text-black text-center mb-16'>
+            <p><a className='text-teal-400'>peça agora</a> seu cartão de</p>
+            <p>crédito MB <a className='text-teal-400'>sem anuidade</a></p>  
+          </div>
+        <div class="grid gap-4 grid-cols-2 justify-evenly bg-cinzaa rounded-xl ml-10 " style={{padding:'30px'}} >
+            <div className='text-2xl font-bold' style={{marginBottom:'100px'}}><p><img src="img/cifrao.png" alt="" style={{width:'64px', }}/></p><p>Cartão de crédito com </p>limite de até R$20 mil</div>
+            <div className='text-2xl font-bold'><p><img src="img/credito.png" alt="" style={{width:'64px',}}/></p><p>Comece a usar o cartão</p><p> de crédito virtual logo</p> após a aprovação</div>
+            <div className='text-2xl font-bold'><p><img src="img/pedagio.png" alt="" style={{width:'64px', }}/></p><p>Livre de mensalidades</p><p> em pedágios e</p> estacionamentos</div>
+            <div className='text-2xl font-bold'><p><img src="img/presente.png" alt="" style={{width:'64px', }}/></p><p>2 meses de Disney Plus</p> grátis e outros benefícios</div>          
+            </div>
+              <div className='w-48 p-2 mt-10 mx-auto border-transparent rounded-full text-white bg-verdeagua hover:bg-verdeagua_escuro font-semibold text-base text-center'>
+              <a href='<a href="https://api.whatsapp.com/send?phone=5519989558913&text=Ol%C3%A1!">'>Peça seu cartão </a>
+              </div>
+        </div>
+            <img className="w-[40rem]" src="" alt="" />
+      </div>
+
+      <div className="w-full bg-white flex h-screen justify-evenly items-center">
+            <img className="w-[30rem]" src="" alt="" />
+            <img className="w-[35rem]" src="" alt="" />
       </div>
    
     </>
