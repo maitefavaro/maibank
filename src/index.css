@@ -5,3 +5,7 @@
 .deixarbonito {
     @apply text-pink-400
 }
+
+.teste:focus{
+    outline: none;
+}
