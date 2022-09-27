@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { Navbar } from './components/Navbar/Navbar';
 
 
 export const App = () => {
@@ -16,7 +17,9 @@ export const App = () => {
     <>
     
       <Fullpage>
+      
         <FullPageSections>
+        <Navbar/>
 
           <FullpageSection style={{height: '100vh'}}>
             <div className="flex justify-between bg-center bg-cover h-full items-center" 
