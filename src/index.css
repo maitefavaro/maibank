@@ -9,3 +9,21 @@
 .teste:focus{
     outline: none;
 }
+
+
+.negao{
+    color: #fff;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(0, 102, 255),
+    0 0 80px rgb(0, 102, 255),
+    0 0 100px rgb(0, 102, 255),
+    0 0 150px rgb(0, 102, 255);
+    font-size: 4rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
