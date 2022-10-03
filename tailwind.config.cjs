@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         azulescuro: "#143655",
         azulclaro: "#0740BC",
+        azulmedio: "#073CC2",
+        azulescuro2: "#062D8F",
+        azulescuro3: "#172342",
         btnlogin: "#0740BC",
         verdeagua: "#04D6C8",
         cinzaa: "#F5F5F5",
