@@ -20,7 +20,6 @@ export const App = () => {
       
         <FullPageSections>
         
-
           <FullpageSection style={{height: '100vh'}}>
             <Navbar />
             <div className="flex justify-around bg-center bg-cover h-full items-center bg-gradient-to-r from-azulclaro to-black" >
@@ -56,11 +55,11 @@ export const App = () => {
 
 
           <FullpageSection style={{height: '100vh'}}>
-            <div className="w-full bg-black flex h-screen justify-around items-center">
+            <div className="w-full bg-gradient-to-r from-black to-azulescuro3 flex h-screen justify-around items-center">
               <div>
 
                 <div className='text-4xl font-bold p-2 mt-10 mx-auto border-transparent rounded-full text-white text-center mb-16'>
-                  <p><a className='text-azulclaro'>peça agora</a> seu cartão de</p>
+                  <p><a className='text-azulclaro'>Peça agora</a> seu cartão de</p>
                   <p>crédito MB <a className='text-azulclaro'>sem anuidade</a></p>  
                 </div>
 
@@ -87,7 +86,7 @@ export const App = () => {
                   </div>
 
                 <div className='w-48 p-2 mt-10 mx-auto border-transparent rounded-full text-white bg-azulclaro hover:bg-azulescuro2 font-semibold text-base text-center'>
-                  <a href='<a href="https://api.whatsapp.com/send?phone=5519989558913&text=Ol%C3%A1!">'>Peça seu cartão </a>
+                  <a href="">Peça seu cartão </a>
                 </div>
               </div>
                 <img className="w-[42rem]" src="img/macbook.png" alt="Erro" />
@@ -124,30 +123,30 @@ export const App = () => {
 
 
           <FullpageSection>
-            <div className="w-full bg-white flex h-screen justify-evenly items-center">
+            <div className="negao3">
+              <div className='negao4'>
               <p>
                 <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>A agilidade que você precisa</p>
                 <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>em um só lugar</p>
               </p>
-              <div>
+              </div>
+              <div className='swiper'>
                 <Swiper
                   slidesPerView={2}
-                  spaceBetween={40}
+                  spaceBetween={60}
                   pagination={{
                     clickable: true,
                   }}
                   modules={[Pagination]}
-                  className="bg-blue-100 h-80"
+                  className="bg-white h-80"
                   >
-                  <SwiperSlide>Slide 1</SwiperSlide>
-                  <SwiperSlide>Slide 2</SwiperSlide>
-                  <SwiperSlide>Slide 3</SwiperSlide>
-                  <SwiperSlide>Slide 4</SwiperSlide>
-                  <SwiperSlide>Slide 5</SwiperSlide>
-                  <SwiperSlide>Slide 6</SwiperSlide>
-                  <SwiperSlide>Slide 7</SwiperSlide>
-                  <SwiperSlide>Slide 8</SwiperSlide>
-                  <SwiperSlide>Slide 9</SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
                 </Swiper>
               </div>
               </div>

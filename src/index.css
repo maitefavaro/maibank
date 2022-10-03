@@ -8,6 +8,7 @@
 
 .teste:focus{
     outline: none;
+    font-size: large;
 }
 
 
@@ -28,3 +29,32 @@
 ::-webkit-scrollbar {
     display: none;
     }
+
+
+.negao3{
+    background-color: #fff;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 35vh;
+
+}
+
+.negao4{
+    padding-left: 10vw;
+}
+
+.msg1{
+
+    font-size: 3rem;
+}
+
+.msg2{
+
+    font-size: 3rem;
+}
+
+.swiper{
+    width: 40vw;
+    padding-left: 60vw;
+}
