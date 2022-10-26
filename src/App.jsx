@@ -1,7 +1,5 @@
-import  React, {useState}  from 'react';
-import { Fullpage,FullPageSections,FullpageSection,FullpageNavigation } from '@ap.cx/react-fullpage';
-import bgimg from '../public/img/back_desfocada.jpg'
-import { MaskField } from 'react-mask-field';
+
+import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import { css, height } from '@mui/system';
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -9,41 +7,25 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { Navbar } from './components/Navbar/Navbar';
+import { Menu } from './components/Menu/index';
 
 
 export const App = () => {
-  const [cpf, setCpf] = useState('');
+
   return (
     <>
-    
       <Fullpage>
-      
+
         <FullPageSections>
-        
-          <FullpageSection style={{height: '100vh'}}>
+
+
+          <FullpageSection style={{ height: '75vh' }}>
             <Navbar />
-            <div className="flex justify-around bg-center bg-cover h-full items-center bg-gradient-to-r from-azulclaro to-black" >
-              <div className="bg-white w-[30%] h-fit px-16 py-16 rounded-xl flex flex-col gap-2">
-                <div className=' space-y-9'>
-                  <h1 className="text-4xl font-bold ">Peça sua conta e cartão do MaiBank</h1>
-                  {/* <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="outline-hidden" type="text" /> */}
-                  <MaskField className="teste" placeholder="Digite seu CPF" mask="___.___.___-__" replacement={{ _: /\d/ }} />
-                </div>
-                <button className="w-32 p-2 mt-16 ml-auto border-transparent rounded-lg text-white bg-azulclaro hover:bg-azulescuro">Continuar</button>
-            </div>
-
-            <div className="text-white w-[60rem]">
-              <h1 className="negao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-              <p className='negao2 pt-5'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!
-              </p>
-            </div>
-
-          </div>
+            <Menu />
           </FullpageSection>
 
 
-          <FullpageSection style={{height: '100vh'}}>
+          <FullpageSection style={{ height: '100vh' }}>
             <div className="w-full bg-white flex h-screen justify-evenly items-center">
               <img className="w-[30rem]" src="img/cart_sombra.png" alt="Erro" />
               <div>
@@ -54,46 +36,46 @@ export const App = () => {
           </FullpageSection>
 
 
-          <FullpageSection style={{height: '100vh'}}>
-            <div className="w-full bg-gradient-to-r from-black to-azulescuro3 flex h-screen justify-around items-center">
+          <FullpageSection style={{ height: '100vh' }}>
+            <div className="w-full bg-black flex h-screen justify-around items-center">
               <div>
 
                 <div className='text-4xl font-bold p-2 mt-10 mx-auto border-transparent rounded-full text-white text-center mb-16'>
                   <p><a className='text-azulclaro'>Peça agora</a> seu cartão de</p>
-                  <p>crédito MB <a className='text-azulclaro'>sem anuidade</a></p>  
+                  <p>crédito MB <a className='text-azulclaro'>sem anuidade</a></p>
                 </div>
 
-                  <div class="grid gap-4 grid-cols-2 justify-evenly rounded-xl ml-10 " style={{padding:'30px'}} >
+                <div class="grid gap-4 grid-cols-2 justify-evenly rounded-xl ml-10 " style={{ padding: '30px' }} >
 
-                    <div className='text-2xl font-bold' style={{marginBottom:'100px'}}>
-                      <p><img src="img/cifrao.png" alt="" style={{width:'64px', }}/></p>
-                      <p className='text-white'>Cartão de crédito com <br />limite de até R$20 mil  </p>
-                    </div>
-                    
-                    <div className='text-2xl font-bold'>
-                      <p><img src="img/cartao-de-credito.png" alt="Erro" style={{width:'64px',}}/></p>
-                      <p className='text-white' >Comece a usar o cartão <br /> de crédito virtual logo <br /> após a aprovação </p>
-                    </div>
-
-                    <div className='text-2xl font-bold'><p><img src="img/estrada-com-pedagio.png" alt="Erro" style={{width:'64px', }}/></p>
-                      <p className='text-white'>Livre de mensalidades <br /> em pedágios e <br /> estacionamentos</p>
-                    </div>
-
-                    <div className='text-2xl font-bold'><p><img src="img/presente.png" alt="Erro" style={{width:'64px', }}/></p>
-                      <p className='text-white'>2 meses de Disney Plus <br /> grátis e outros benefícios</p>
-                    </div>      
-
+                  <div className='text-2xl font-bold' style={{ marginBottom: '100px' }}>
+                    <p><img src="img/cifrao.png" alt="" style={{ width: '64px', }} /></p>
+                    <p className='text-white'>Cartão de crédito com <br />limite de até R$20 mil  </p>
                   </div>
+
+                  <div className='text-2xl font-bold'>
+                    <p><img src="img/cartao-de-credito.png" alt="Erro" style={{ width: '64px', }} /></p>
+                    <p className='text-white' >Comece a usar o cartão <br /> de crédito virtual logo <br /> após a aprovação </p>
+                  </div>
+
+                  <div className='text-2xl font-bold'><p><img src="img/estrada-com-pedagio.png" alt="Erro" style={{ width: '64px', }} /></p>
+                    <p className='text-white'>Livre de mensalidades <br /> em pedágios e <br /> estacionamentos</p>
+                  </div>
+
+                  <div className='text-2xl font-bold'><p><img src="img/presente.png" alt="Erro" style={{ width: '64px', }} /></p>
+                    <p className='text-white'>2 meses de Disney Plus <br /> grátis e outros benefícios</p>
+                  </div>
+
+                </div>
 
                 <div className='w-48 p-2 mt-10 mx-auto border-transparent rounded-full text-white bg-azulclaro hover:bg-azulescuro2 font-semibold text-base text-center'>
                   <a href="">Peça seu cartão </a>
                 </div>
               </div>
-                <img className="w-[42rem]" src="img/macbook.png" alt="Erro" />
+              {/* <img className="w-[42rem]" src="img/macbook.png" alt="Erro" /> */}
             </div>
           </FullpageSection>
 
-          
+
           <FullpageSection>
             <div className="w-full bg-white flex h-screen justify-evenly items-center">
               <p>
@@ -125,10 +107,10 @@ export const App = () => {
           <FullpageSection>
             <div className="negao3">
               <div className='negao4'>
-              <p>
-                <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>A agilidade que você precisa</p>
-                <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>em um só lugar</p>
-              </p>
+                <p>
+                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>A agilidade que você precisa</p>
+                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>em um só lugar</p>
+                </p>
               </div>
               <div className='swiper'>
                 <Swiper
@@ -139,17 +121,15 @@ export const App = () => {
                   }}
                   modules={[Pagination]}
                   className="bg-white h-80"
-                  >
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{backgroundColor:'GrayText',height:1000, textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse quos distinctio ducimus quas voluptas aperiam, possimus, iste aspernatur nostrum rerum sint. Esse laudantium quia fugit inventore illo numquam possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae ab quam non, quod pariatur sit, maiores perspiciatis iure consequuntur nihil libero temporibus corrupti reiciendis, culpa dolore labore ipsam magni!</h1></SwiperSlide>
+                >
+                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Pix</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Shell Box</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Viagens</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>MaiBank cel</h1></SwiperSlide>
+                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Gift Card</h1></SwiperSlide>
                 </Swiper>
               </div>
-              </div>
+            </div>
           </FullpageSection>
 
 
