@@ -1,17 +1,23 @@
 import { MaskField } from 'react-mask-field';
 import  React, {useState}  from 'react';
+import './style.css'
 
 export const Menu = () => {
     const [cpf, setCpf] = useState('');
+
     return (
-            <div className="flex justify-around bg-center bg-cover h-full items-center bg-gradient-to-r from-azulclaro to-black" >
+            <div id='menu' className="flex justify-around bg-center bg-cover h-full items-center bg-gradient-to-r
+            from-roxo1
+            via-roxo2
+            to-roxo5
+            background-animate" >
               <div className="bg-white w-[30%] h-fit px-16 py-16 rounded-xl flex flex-col gap-2">
                 <div className=' space-y-9'>
                 <h1 className="text-4xl font-bold ">Peça sua conta e cartão do MaiBank</h1>
                 {/* <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="outline-hidden" type="text" /> */}
                 <MaskField className="teste" placeholder="Digite seu CPF" mask="___.___.___-__" replacement={{ _: /\d/ }} />
                 </div>
-                <button className="w-32 p-2 mt-16 ml-auto border-transparent rounded-lg text-white bg-azulclaro hover:bg-azulescuro">Continuar</button>
+                <button className="w-32 p-2 mt-16 ml-auto border-transparent rounded-lg text-white bg-roxo4 hover:bg-roxo1">Continuar</button>
                 </div>
 
                 <div className="text-white w-[60rem]">
@@ -22,5 +28,6 @@ export const Menu = () => {
                 </div>
 
             </div>
+            
     )
 }
