@@ -2,12 +2,14 @@
 import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import { css, height } from '@mui/system';
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { Navbar } from './components/Navbar/Navbar';
 import { Menu } from './components/Menu/index';
+import { First } from './components/pages/First/index';
+import { Sec } from './components/pages/Sec/index';
+
 
 
 export const App = () => {
@@ -26,53 +28,12 @@ export const App = () => {
 
 
           <FullpageSection style={{ height: '100vh' }}>
-            <div className="w-full bg-white flex h-screen justify-evenly items-center">
-              <img className="w-[30rem]" src="img/cart_sombra.png" alt="Erro" />
-              <div>
-                <p className='font-bold text-4xl'>comigo, coisa boa nunca <br /> vem sozinha.</p>
-                <p className='text-4xl'>é por isso <br /> que eu tenho um monte <br /> de vantagens pra você <br /> aproveitar.</p>
-              </div>
-            </div>
+            <First />
           </FullpageSection>
 
 
           <FullpageSection style={{ height: '100vh' }}>
-            <div className="w-full bg-black flex h-screen justify-around items-center">
-              <div>
-
-                <div className='text-4xl font-bold p-2 mt-10 mx-auto border-transparent rounded-full text-white text-center mb-16'>
-                  <p><a className='text-azulclaro'>Peça agora</a> seu cartão de</p>
-                  <p>crédito MB <a className='text-azulclaro'>sem anuidade</a></p>
-                </div>
-
-                <div class="grid gap-4 grid-cols-2 justify-evenly rounded-xl ml-10 " style={{ padding: '30px' }} >
-
-                  <div className='text-2xl font-bold' style={{ marginBottom: '100px' }}>
-                    <p><img src="img/cifrao.png" alt="" style={{ width: '64px', }} /></p>
-                    <p className='text-white'>Cartão de crédito com <br />limite de até R$20 mil  </p>
-                  </div>
-
-                  <div className='text-2xl font-bold'>
-                    <p><img src="img/cartao-de-credito.png" alt="Erro" style={{ width: '64px', }} /></p>
-                    <p className='text-white' >Comece a usar o cartão <br /> de crédito virtual logo <br /> após a aprovação </p>
-                  </div>
-
-                  <div className='text-2xl font-bold'><p><img src="img/estrada-com-pedagio.png" alt="Erro" style={{ width: '64px', }} /></p>
-                    <p className='text-white'>Livre de mensalidades <br /> em pedágios e <br /> estacionamentos</p>
-                  </div>
-
-                  <div className='text-2xl font-bold'><p><img src="img/presente.png" alt="Erro" style={{ width: '64px', }} /></p>
-                    <p className='text-white'>2 meses de Disney Plus <br /> grátis e outros benefícios</p>
-                  </div>
-
-                </div>
-
-                <div className='w-48 p-2 mt-10 mx-auto border-transparent rounded-full text-white bg-azulclaro hover:bg-azulescuro2 font-semibold text-base text-center'>
-                  <a href="">Peça seu cartão </a>
-                </div>
-              </div>
-              {/* <img className="w-[42rem]" src="img/macbook.png" alt="Erro" /> */}
-            </div>
+            <Sec />
           </FullpageSection>
 
 

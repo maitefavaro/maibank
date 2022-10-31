@@ -1,0 +1,14 @@
+.button{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(87 15 102 / var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    border: transparent;
+  }
+  .button:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(58 10 68 / var(--tw-bg-opacity));
+  }
