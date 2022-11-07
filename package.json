@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-input-mask": "^2.0.4",
     "react-mask-field": "^3.0.1",
+    "react-router-dom": "^6.4.3",
     "swiper": "^8.4.2"
   },
   "devDependencies": {

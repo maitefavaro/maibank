@@ -10,6 +10,10 @@ module.exports = {
     extend: {
 
       colors: {
+        agoravai: "#3A0CA3",
+        agoravai2: "#560BAD",
+        agoravai3: "#2A0A73",
+
         preto: "#07051B",
         roxo1: "#3A0A44",
         roxo2: "#570F66",
