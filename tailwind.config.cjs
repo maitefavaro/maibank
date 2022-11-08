@@ -9,6 +9,21 @@ module.exports = {
 
     extend: {
 
+      borderRadius: {
+        'none': '0',
+        'sm': '0.125rem',
+        DEFAULT: '0.25rem',
+        DEFAULT: '4px',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'full': '9999px',
+        'large': '30px',
+      },
+
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(102, 18, 119, 0.8)',
+      },
+
       colors: {
         agoravai: "#3A0CA3",
         agoravai2: "#560BAD",

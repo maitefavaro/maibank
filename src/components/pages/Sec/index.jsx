@@ -8,8 +8,8 @@ export const Sec = () => {
               <div>
 
                 <div className='text-4xl font-bold p-2 mt-10 mx-auto border-transparent rounded-full text-white text-center mb-16'>
-                  <p><a className='text-black'>Peça agora</a> seu cartão de</p>
-                  <p>crédito MB <a className='text-black'>sem anuidade</a></p>
+                  <p><a className=''>Peça agora </a> <a className="text-purple-400">seu cartão de</a></p>
+                  <p><a className="text-purple-400">crédito MB </a><a className=''>sem anuidade</a></p>
                 </div>
 
                 <div class="grid gap-4 grid-cols-2 justify-evenly rounded-xl ml-10" style={{ padding: '30px' }} >
