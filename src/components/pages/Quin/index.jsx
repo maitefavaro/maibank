@@ -4,6 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Quin = () => {
     return (
+      <div className="bg-gradient-to-r
+      from-roxo1
+      via-roxo2
+      to-roxo3
+       background-animate">
         <div className="negao3">
               <div className='negao4'>
                 <p>
@@ -19,7 +24,7 @@ export const Quin = () => {
                     clickable: true,
                   }}
                   modules={[Pagination]}
-                  className="bg-white h-80"
+                  className="bg-transparent h-80"
                 >
                   <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Pix</h1></SwiperSlide>
                   <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Shell Box</h1></SwiperSlide>
@@ -28,6 +33,7 @@ export const Quin = () => {
                   <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Gift Card</h1></SwiperSlide>
                 </Swiper>
               </div>
-            </div>
+        </div>
+      </div>
     )
 }

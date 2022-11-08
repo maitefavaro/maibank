@@ -32,11 +32,10 @@
 
 
 .negao3{
-    background-color: #fff;
     width: auto;
     display: flex;
     align-items: center;
-    padding-top: 35vh;
+    height: 100vh;
 
 }
 
