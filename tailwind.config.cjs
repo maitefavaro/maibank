@@ -9,6 +9,14 @@ module.exports = {
 
     extend: {
 
+      height: {
+        'card-login': '30rem',
+      },
+
+      width: {
+        'card-log': '42rem',
+      },
+
       borderRadius: {
         'none': '0',
         'sm': '0.125rem',
@@ -50,5 +58,7 @@ module.exports = {
 
   },
   
-  plugins: [],
+  plugins: [
+    
+  ],
 }

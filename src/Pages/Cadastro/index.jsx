@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 
-export const Login = () => {
+export const Cadastro = () => {
     return (
         <Fullpage>
             <FullPageSections>
@@ -13,7 +13,7 @@ export const Login = () => {
                         via-roxo2
                         to-roxo3
                         background-animate'>
-
+OI maitê linda
                     </div>
                 </FullpageSection>
             </FullPageSections>

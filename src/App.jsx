@@ -4,11 +4,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Navbar } from './components/Navbar/Navbar';
 import { Menu } from './components/Menu/index';
-import { First } from './components/pages/First/index';
-import { Sec } from './components/pages/Sec/index';
-import { Ter } from './components/pages/Ter/index';
-import { Quar } from './components/pages/Quar/index';
-import { Quin } from './components/pages/Quin/index';
+import { First } from './components/Sections/First/index';
+import { Sec } from './components/Sections/Sec/index';
+import { Ter } from './components/Sections/Ter/index';
+import { Quar } from './components/Sections/Quar/index';
+import { Quin } from './components/Sections/Quin/index';
 
 
 
