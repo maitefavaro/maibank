@@ -13,6 +13,10 @@ module.exports = {
         'card-login': '30rem',
       },
 
+      height: {
+        'card-cadastro': '35rem',
+      },
+
       width: {
         'card-log': '42rem',
       },
