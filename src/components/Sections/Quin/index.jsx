@@ -12,8 +12,8 @@ export const Quin = () => {
         <div className="negao3">
               <div className='negao4'>
                 <p>
-                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>A agilidade que você precisa</p>
-                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-black text-center '>em um só lugar</p>
+                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>A agilidade que você precisa</p>
+                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>em um só lugar</p>
                 </p>
               </div>
               <div className='swiper'>
@@ -26,11 +26,11 @@ export const Quin = () => {
                   modules={[Pagination]}
                   className="bg-transparent h-80"
                 >
-                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Pix</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Shell Box</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Viagens</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>MaiBank cel</h1></SwiperSlide>
-                  <SwiperSlide><h1 style={{ backgroundColor: 'GrayText', height: 1000, textAlign: 'center' }}>Gift Card</h1></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt="" /></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>Shell Box</h1></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>Viagens</h1></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>MaiBank cel</h1></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>Gift Card</h1></SwiperSlide>
                 </Swiper>
               </div>
         </div>

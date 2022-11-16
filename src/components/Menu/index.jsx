@@ -18,7 +18,7 @@ export const Menu = () => {
                 {/* <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="outline-hidden" type="text" /> */}
                 <MaskField className="teste" placeholder="Digite seu CPF" mask="___.___.___-__" replacement={{ _: /\d/ }} />
                 </div>
-                <button className="w-40 h-10 border border-principal rounded text-white bg-preto hover:bg-gradient-to-r from-preto to-roxo1 font-semibold text-base text-center mt-16 ml-auto">Continuar</button>
+                <button className="cursor-pointer w-48 px-4 py-3 transition-all duration-700 mt-10 ml-72 rounded text-white bg-roxo1 hover:bg-roxo2 font-semibold text-base text-center">Continuar</button>
                 </div>
 
 

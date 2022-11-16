@@ -10,7 +10,7 @@ module.exports = {
     extend: {
 
       height: {
-        'card-login': '30rem',
+        'card-login': '35rem',
       },
 
       height: {
