@@ -16,7 +16,7 @@ export const Login = () => {
                             <div className='bg-gray-200 h-card-login w-card-log flex flex-col rounded-xl items-center justify-center'>
                             <img className="h-24 rounded-full " src="new_img/logo-quad.png" alt="Erro" />
                             <p className='font-bold text-2xl'>FAÇA SEU <span className='text-roxo4'>LOGIN</span></p>
-                            <p className='text-sm mb-10'>Não possui login? <a className='italic text-roxo4 underline hover:text-principal' href="/cadastro">Faça seu cadastro!</a></p>
+                            <p className='text-sm mb-10'>Não possui login? <a className='italic text-roxo4 hover:underline hover:text-principal' href="/cadastro">Faça seu cadastro!</a></p>
 
                                 <div>
                                     <label htmlFor="email-address" className="sr-only">

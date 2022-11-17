@@ -37,7 +37,7 @@ export const Sec = () => {
                 </div>
 
                 <div className='cursor-pointer w-48 px-4 py-3 transition-all duration-700 mt-10 mx-auto rounded text-white bg-roxo1 hover:bg-roxo2 font-semibold text-base text-center'>
-                  <a href="/cadastro">Peça seu cartão </a>
+                  <a href="/dashboard">Peça seu cartão </a>
                 </div>
               </div>
               {/* <img className="w-[42rem]" src="img/macbook.png" alt="Erro" /> */}

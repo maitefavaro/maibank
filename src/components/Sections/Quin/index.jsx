@@ -11,10 +11,11 @@ export const Quin = () => {
        background-animate">
         <div className="negao3">
               <div className='negao4'>
-                <p>
+                <div className="mt-10">
                   <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>A agilidade que você precisa</p>
                   <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>em um só lugar</p>
-                </p>
+                </div>
+                
               </div>
               <div className='swiper'>
                 <Swiper
