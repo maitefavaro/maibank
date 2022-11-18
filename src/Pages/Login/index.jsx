@@ -19,11 +19,11 @@ export const Login = () => {
                             <p className='text-sm mb-10'>Não possui login? <a className='italic text-roxo4 hover:underline hover:text-principal' href="/cadastro">Faça seu cadastro!</a></p>
 
                                 <div>
-                                    <label htmlFor="email-address" className="sr-only">
+                                    <label for="email" className="sr-only">
                                     Email address
                                     </label>
                                     <input
-                                    id="email-address"
+                                    id="email"
                                     name="email"
                                     type="email"
                                     autoComplete="email"
