@@ -8,7 +8,7 @@ export const Navbar = () => {
 
                 <a className="py-2 px-6 rounded-xl" href="/login">
                     <div className=" h-6  md:flex md:flex-row md:gap-1 md:justify-end md:px-2 hidden lg:visible text-white font-bold ">
-                        <p className="text-xl">Login</p>
+                        <p className="text-xl hover:underline">Login</p>
                         {/* <img src="img/login.png" alt="Erro" /> */}
                     </div>
                 </a>

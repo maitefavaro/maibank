@@ -8,7 +8,7 @@ export const Quin = () => {
       from-roxo1
       via-roxo2
       to-roxo3
-       background-animate">
+       background-animate flex justify-center flex-col items-center">
         <div className="negao3">
               <div className='negao4'>
                 <div className="mt-10">
@@ -27,11 +27,15 @@ export const Quin = () => {
                   modules={[Pagination]}
                   className="bg-transparent h-80"
                 >
-                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt="" /></SwiperSlide>
-                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>Shell Box</h1></SwiperSlide>
-                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>Viagens</h1></SwiperSlide>
-                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>MaiBank cel</h1></SwiperSlide>
-                  <SwiperSlide className="bg-roxo1"> <img src="new_img/pix.svg" className="w-24" alt=""/><h1>Gift Card</h1></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="new_img/pix.svg" className="w-24" alt="" /><h1>Pix</h1></SwiperSlide>
+
+                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/gas-station (1).png" className="w-24" alt=""/><h1>Shell Box</h1></SwiperSlide>
+
+                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/plane (1).png" className="w-24" alt=""/><h1>Viagens</h1></SwiperSlide>
+
+                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/cell-phone (1).png" className="w-24" alt=""/><h1>MaiBank cel</h1></SwiperSlide>
+
+                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/giftbox (1).png" className="w-24" alt=""/><h1>Gift Card</h1></SwiperSlide>
                 </Swiper>
               </div>
         </div>
