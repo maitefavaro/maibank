@@ -9,6 +9,7 @@ import { Sec } from './components/Sections/Sec/index';
 import { Ter } from './components/Sections/Ter/index';
 import { Quar } from './components/Sections/Quar/index';
 import { Quin } from './components/Sections/Quin/index';
+import { Footer } from './components/Footer/Footer';
 
 
 
@@ -49,6 +50,11 @@ export const App = () => {
 
           <FullpageSection>
             <Quin />
+          </FullpageSection>
+
+
+          <FullpageSection>
+            <Footer />
           </FullpageSection>
 
 

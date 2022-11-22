@@ -10,12 +10,9 @@ export const Quin = () => {
       to-roxo3
        background-animate flex justify-center flex-col items-center">
         <div className="negao3">
-              <div className='negao4'>
-                <div className="mt-10">
-                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>A agilidade que você precisa</p>
-                  <p className='text-4xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>em um só lugar</p>
-                </div>
-                
+              <div className='mb-20'>
+                  <p className='text-5xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>A agilidade que você precisa</p>
+                  <p className='text-5xl font-bold p-2 mx-auto border-transparent rounded-full text-white text-center '>em um só lugar</p>
               </div>
               <div className='swiper'>
                 <Swiper
@@ -33,7 +30,7 @@ export const Quin = () => {
 
                   <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/plane (1).png" className="w-24" alt=""/><h1>Viagens</h1></SwiperSlide>
 
-                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/cell-phone (1).png" className="w-24" alt=""/><h1>MaiBank cel</h1></SwiperSlide>
+                  <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/cell-phone (1).png" className="w-24" alt=""/><h1>MaiBank Cel</h1></SwiperSlide>
 
                   <SwiperSlide className="bg-roxo1 items-center flex-col flex justify-center gap-4 text-white font-bold"> <img src="imgs/giftbox (1).png" className="w-24" alt=""/><h1>Gift Card</h1></SwiperSlide>
                 </Swiper>
