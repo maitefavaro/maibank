@@ -1,9 +1,12 @@
 import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import "swiper/css";
 import "swiper/css/pagination";
+import { MaskField } from 'react-mask-field';
 
 
 export const Login = () => {
+
+    
     return (
         <Fullpage>
             <FullPageSections>
@@ -18,19 +21,12 @@ export const Login = () => {
                             <p className='font-bold text-2xl'>FAÇA SEU <span className='text-roxo4'>LOGIN</span></p>
                             <p className='text-sm mb-10'>Não possui login? <a className='italic text-roxo4 hover:underline hover:text-principal' href="/cadastro">Faça seu cadastro!</a></p>
 
+
                                 <div>
-                                    <label for="email" className="sr-only">
-                                    Email address
+                                    <label htmlFor="email-address" className="sr-only">
+                                    CPF
                                     </label>
-                                    <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    autoComplete="email"
-                                    required
-                                    className="relative block w-96 appearance-none rounded-none rounded-t-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mb-5"
-                                    placeholder="Email address"
-                                    />
+                                    <MaskField placeholder="CPF" className="relative block w-96 appearance-none rounded-none rounded-t-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mb-5" mask="___.___.___-__" replacement={{ _: /\d/ }} />
                                 </div>
 
                                 <div>

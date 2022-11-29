@@ -14,7 +14,7 @@ module.exports = {
       },
 
       height: {
-        'card-cadastro': '35rem',
+        'card-cadastro': '45rem',
       },
 
       width: {

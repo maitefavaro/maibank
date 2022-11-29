@@ -1,9 +1,13 @@
 import { Fullpage, FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import "swiper/css";
 import "swiper/css/pagination";
+import { useState } from 'react';
+import { MaskField } from 'react-mask-field';
 
 
 export const Cadastro = () => {
+
+    const [isDateInputHover, setDateInputHover] = useState(false);
 
     function register_autentication(){
         console.log("alksjdfn")
@@ -23,14 +27,21 @@ export const Cadastro = () => {
                             <p className='font-bold text-2xl'>FAÇA SEU <span className='text-roxo4'>CADASTRO</span></p>
 
                                 <div>
-                                    <label htmlFor="email-address" className="sr-only">
+                                    <label htmlFor="cpf" className="sr-only">
+                                    CPF
+                                    </label>
+                                    <MaskField placeholder="CPF" className="relative block w-96 appearance-none rounded-none rounded-b-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-5" mask="___.___.___-__" replacement={{ _: /\d/ }} />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="" className="sr-only">
                                     Email address
                                     </label>
                                     <input
-                                    id="email-address"
-                                    name="email"
-                                    type="email"
-                                    autoComplete="email"
+                                    id="nome"
+                                    name="nome"
+                                    type="text"
+                                    autoComplete=""
                                     required
                                     className="relative block w-96 appearance-none rounded-none rounded-t-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-5"
                                     placeholder="Nome"
@@ -42,43 +53,60 @@ export const Cadastro = () => {
                                     Email address
                                     </label>
                                     <input
-                                    id="email-address"
+                                    id=  "email-address"
                                     name="email"
                                     type="email"
                                     autoComplete="email"
                                     required
-                                    className="relative block w-96 appearance-none rounded-none rounded-t-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mb-5 mt-5"
+                                    className="relative block w-96 appearance-none rounded-none rounded-t-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-5"
                                     placeholder="Email"
                                     />
-                                </div>
+                                </div> 
+  
 
                                 <div>
-                                    <label htmlFor="password" className="sr-only">
-                                    Password
+                                    <label htmlFor="data_nascimento" className="sr-only">
+                                    Data de Nascimento
                                     </label>
                                     <input
-                                    id="password"
-                                    name="password"
-                                    type="password"
-                                    autoComplete="current-password"
+                                    id="data_nascimento"
+                                    name="data_nascimento"
+                                    type={isDateInputHover ? 'date' : 'text'}
+                                    placeholder="Data de nascimento"
+                                    onFocus={() => setDateInputHover(true)}
+                                    onBlur={() => setDateInputHover(false)}
                                     required
-                                    className="relative block w-96 appearance-none rounded-none rounded-b-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                    placeholder="Senha"
+                                    className="relative block w-96 appearance-none rounded-none rounded-b-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-5"
                                     />
-                                </div>
+                                </div>  
+
 
                                 <div>
-                                    <label htmlFor="password" className="sr-only">
-                                    Password
+                                    <label htmlFor="sexo" className="sr-only">
+                                    Sexo
                                     </label>
                                     <input
-                                    id="password2"
-                                    name="password2"
+                                    id="sexo"
+                                    name="sexo"
+                                    type=""
+                                    autoComplete="current-"
+                                    required
+                                    className="relative block w-96 appearance-none rounded-none rounded-b-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-5"
+                                    placeholder="Sexo"
+                                    />
+                                </div>        
+                                <div>
+                                    <label htmlFor="senha" className="sr-only">
+                                    Senha
+                                    </label>
+                                    <input
+                                    id="senha"
+                                    name="senha"
                                     type="password"
                                     autoComplete="current-password"
                                     required
                                     className="relative block w-96 appearance-none rounded-none rounded-b-md border border-none h-12 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-5"
-                                    placeholder="Confirme sua senha"
+                                    placeholder="Senha"
                                     />
                                 </div>        
 
