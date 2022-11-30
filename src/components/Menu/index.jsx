@@ -11,7 +11,7 @@ export const Menu = () => {
     const [cpf, setCpf] = useState('');
 
     function callCadastro(){
-        navigate('/cadastro')
+        navigate('/cadastro?cpf='+cpf)
     }
 
     return (
@@ -24,7 +24,7 @@ export const Menu = () => {
                 <div className=' space-y-9'>
                 <h1 className="text-4xl font-bold ">Peça sua conta e cartão do MaiBank</h1>
                 {/* <MaskedInput value={cpf} onChange={(event) => setCpf(event.target.value)} className="outline-hidden" type="text" /> */}
-                <MaskField className="teste bg-gray-100 p-3 w-full rounded-md" placeholder="Digite seu CPF" mask="___.___.___-__" replacement={{ _: /\d/ }} />
+                <MaskField value={cpf} onChange={(e) => setCpf(e.target.value)} className="teste bg-gray-100 p-3 w-full rounded-md" placeholder="Digite seu CPF" mask="___.___.___-__" replacement={{ _: /\d/ }} />
                 </div>
                 <button className="cursor-pointer w-48 px-4 py-3 transition-all duration-700 mt-10 ml-72 rounded text-white bg-roxo1 hover:bg-roxo2 font-semibold text-base text-center" onClick={ callCadastro }>Continuar</button>
                 </div>
