@@ -25,7 +25,7 @@ export const Login = () => {
                 console.log(response['status'])
                 if (response['status'] == '200'){
                     createSession(cpf)
-                    navigate(`/dashboard/${cpf}`)            
+                    //navigate(`/dashboard/${cpf}`)            
                 }
             }).catch(err => {
                 console.log(err)
@@ -50,7 +50,9 @@ export const Login = () => {
     return (
         <Fullpage>
             <FullPageSections>
+                
                 <FullpageSection style={{ height: '100vh' }}>
+                
                     <div className='w-full flex h-screen justify-around items-center bg-gradient-to-r
                         from-roxo1
                         via-roxo2
