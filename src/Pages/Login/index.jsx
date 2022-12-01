@@ -5,7 +5,7 @@ import { MaskField } from 'react-mask-field';
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate, useNavigation } from 'react-router-dom';
-
+import { createSession } from './../../Session'
 
 export const Login = () => {
     const navigate = useNavigate();
@@ -14,18 +14,37 @@ export const Login = () => {
     const [password, setPassword] = useState('')
 
     function logar() {
-        axios.get("http://127.0.0.1:8000/api/usuario/")
-            .then((response) => {
-                console.log(response.data)
-                response.data.forEach(element => {
-                    if (element.cpf == cpf && element.senha == password) {
-                        console.log("lskjdsdisjifidfj")
-                        navigate('/dashboard')
-                    }
-                }
-                );
+        const credenciais = {
+            'cpf': cpf,
+            'senha': password
+        }
 
+        axios.post("http://127.0.0.1:8000/api/logar/", credenciais)
+            .then((response) =>{
+                console.log(response)
+                console.log(response['status'])
+                if (response['status'] == '200'){
+                    createSession(cpf)
+                    navigate(`/dashboard/${cpf}`)            
+                }
+            }).catch(err => {
+                console.log(err)
             })
+
+
+        // axios.get("http://127.0.0.1:8000/api/usuario/")
+        //     .then((response) => {
+        //         console.log(response.data)
+        //         response.data.forEach(element => {
+        //             if (element.cpf == cpf && element.senha == password) {
+        //                 console.log("lskjdsdisjifidfj")
+        //                 createSession(cpf)
+        //                 navigate(`/dashboard/${cpf}`)
+        //             }
+        //         }
+        //         );
+
+        //     })
     }
 
     return (

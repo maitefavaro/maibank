@@ -16,7 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index element={<App />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/dashboard" element={<Dashboard />}/>
+          <Route path="/dashboard/:cpf" element={<Dashboard />}/>
+          
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
